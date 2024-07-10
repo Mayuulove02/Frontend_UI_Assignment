@@ -10,7 +10,7 @@ const StatsCard = ({
   color = [],
   cardColor,
   valueColor = [],
-  showDropdown = true // Prop to control dropdown visibility
+  showDropdown = true 
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,7 +28,7 @@ const StatsCard = ({
         <div className='flex items-center justify-center h-10 w-10 rounded-xl' style={{ backgroundColor: `${bgColor}` }}>
           <Img src={src} alt="icons" className="h-6 w-6" />
         </div>
-        {showDropdown && ( // Conditionally render dropdown based on showDropdown prop
+        {showDropdown && ( 
           <div className="relative inline-block text-left">
             <div>
               <button
