@@ -121,7 +121,7 @@ const CircleChart = () => {
                         )}
                     </div>
                 </div>
-                <div className='flex items-center justify-between ' style={{width:"90%",margin:"auto"}}>
+                <div className='flex items-center justify-between' style={{width:"90%",margin:"auto",marginBottom:"4px"}}>
                     {marketing.map((item, index) => (
                         <div key={index} className="flex items-center space-x-2">
                             <span className="h-3 w-3 rounded-full" style={{ backgroundColor: item.backgroundColor }}></span>
@@ -129,7 +129,7 @@ const CircleChart = () => {
                         </div>
                     ))}
                 </div>
-                <div className="w-48 h-48 mt-4" style={{margin:"auto",marginTop:"2"}}>
+                <div className="w-48 h-48" style={{margin:"auto",marginTop:"2"}}>
                     <canvas ref={canvasRef} id="existing-canvas" />
                 </div>
             </div>

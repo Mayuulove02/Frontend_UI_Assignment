@@ -55,8 +55,8 @@ const StatsCard = ({
                 onBlur={closeDropdown}
               >
                 <div className="py-1" role="none">
-                  <a href="/" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-0">Settings</a>
-                  <a href="/" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-1">Profile</a>
+                  <a href="/" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-0">Last Week</a>
+                  <a href="/" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-1">Last Month</a>
                 </div>
               </div>
             )}
