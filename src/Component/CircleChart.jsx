@@ -129,7 +129,7 @@ const CircleChart = () => {
                         </div>
                     ))}
                 </div>
-                <div className="w-52 h-52 mt-4" style={{margin:"auto",marginTop:"2"}}>
+                <div className="w-48 h-48 mt-4" style={{margin:"auto",marginTop:"2"}}>
                     <canvas ref={canvasRef} id="existing-canvas" />
                 </div>
             </div>

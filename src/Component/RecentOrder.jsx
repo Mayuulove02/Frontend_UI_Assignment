@@ -8,13 +8,21 @@ const RecentOrder = () => {
         <div className='p-2 rounded-xl shadow bg-white'>
             <h3>Recent Orders</h3>
             <RecentOrderCard src={goldIphone} color={"#CC5F5F"} status={"Pending"} bgcolor={"#F57E771F"} />
+            <hr />
             <RecentOrderCard src={blackIphone} color={"#519C66"} status={"Completed"} bgcolor={"#32936F1F"} />
+            <hr />
             <RecentOrderCard src={goldIphone} color={"#CC5F5F"} status={"Pending"} bgcolor={"#F57E771F"} />
+            <hr />
             <RecentOrderCard src={blackIphone} color={"#519C66"} status={"Completed"} bgcolor={"#32936F1F"} />
+            <hr />
             <RecentOrderCard src={blackIphone} color={"#519C66"} status={"Completed"} bgcolor={"#32936F1F"} />
+            <hr />
             <RecentOrderCard src={blackIphone} color={"#519C66"} status={"Completed"} bgcolor={"#32936F1F"} />
+            <hr />
             <RecentOrderCard src={goldIphone} color={"#CC5F5F"} status={"Pending"} bgcolor={"#F57E771F"} />
+            <hr />
             <RecentOrderCard src={goldIphone} color={"#CC5F5F"} status={"Pending"} bgcolor={"#F57E771F"} />
+            <hr />
             <RecentOrderCard src={goldIphone} color={"#CC5F5F"} status={"Pending"} bgcolor={"#F57E771F"} />
         </div>
     )

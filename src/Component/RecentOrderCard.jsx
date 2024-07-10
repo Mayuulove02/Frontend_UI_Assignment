@@ -19,7 +19,6 @@ const RecentOrderCard = ({ src, status, color, bgcolor }) => {
                 </div>
             </div>
         </div> 
-        <hr />
         </>
     );
 };
