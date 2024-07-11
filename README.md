@@ -1,6 +1,6 @@
 # Frontend UI Assignment 💰
 
-Welcome to Frontend UI Assignmen! Our comprehensive Payroll system is designed to handle all types of transactions, providing real-time processing for both national and international transactions. With an array of features and functionalities, we've redefined payroll management.
+Welcome to Frontend UI Assignment! 
 
 ## Folder Structure
 
