@@ -7,7 +7,8 @@ https://frontend-ui-assignment.vercel.app
 
 ## Folder Structure
 
-https://github.com/Mayuulove02/Frontend_U_Assignment/blob/master/src/Assests/folder_strcuture.png
+<!-- https://github.com/Mayuulove02/Frontend_U_Assignment/blob/master/src/Assests/folder_strcuture.png -->
+![Dashboard Screenshot](../apica/src/Assests/folder_strcuture.png)
 
 
 
