@@ -11,16 +11,16 @@ const StatsCard = ({
   cardColor,
   valueColor = [],
   showDropdown = true,
-  percenatgeColor=[] 
+  percenatgeColor = []
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setOpenDropdown(openDropdown === 'dropdown' ? null : 'dropdown');
   };
 
   const closeDropdown = () => {
-    setIsOpen(false);
+    setOpenDropdown(null);
   };
 
   return (
@@ -29,14 +29,14 @@ const StatsCard = ({
         <div className='flex items-center justify-center h-10 w-10 rounded-xl' style={{ backgroundColor: `${bgColor}` }}>
           <Img src={src} alt="icons" className="h-6 w-6" />
         </div>
-        {showDropdown && ( 
+        {showDropdown && (
           <div className="relative inline-block text-left">
             <div>
               <button
                 type="button"
                 className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm text-gray-400 hover:bg-white"
                 id="menu-button"
-                aria-expanded={isOpen}
+                aria-expanded={openDropdown === 'dropdown'}
                 aria-haspopup="true"
                 onClick={toggleDropdown}
               >
@@ -46,7 +46,7 @@ const StatsCard = ({
                 </svg>
               </button>
             </div>
-            {isOpen && (
+            {openDropdown === 'dropdown' && (
               <div
                 className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                 role="menu"
@@ -70,7 +70,7 @@ const StatsCard = ({
             <h3 className="text-gray-400 text-sm" style={{ color: `${color[index]}` }}>{title}</h3>
             <div className="flex items-center">
               <p className="text-xl font-medium" style={{ color: `${valueColor[index]}` }}>{values[index]}</p>
-              <p className="ml-3 text-xs font-normal text-green-500" style={{color:`${percenatgeColor[index]}`}}>{percenatge[index]}</p>
+              <p className="ml-3 text-xs font-normal text-green-500" style={{ color: `${percenatgeColor[index]}` }}>{percenatge[index]}</p>
             </div>
           </div>
         ))}
