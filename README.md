@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Frontend UI Assignment 💰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Frontend UI Assignmen! Our comprehensive Payroll system is designed to handle all types of transactions, providing real-time processing for both national and international transactions. With an array of features and functionalities, we've redefined payroll management.
 
-## Available Scripts
+## Folder Structure
 
-In the project directory, you can run:
+https://github.com/Mayuulove02/Frontend_U_Assignment/blob/master/src/Assests/folder_strcuture.png
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### 1. Dashboard Page
+- **Reusable Component:** Created reusable component library for button, cards, searchbar and navbar.
+- **Graphical Representation:** Provides graphical representation of transaction history for better analysis and decision-making. Implemented interactive features such as tooltips, zooming, and panning for charts.
+- **Comprehensive Dashboard:** Offers a comprehensive dashboard with detailed insights into transaction trends and financial summaries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Orders Page
+- **Orders Summary:** Allows admin to view their transaction history  in an intuitive and user-friendly interface.
+- **Filter:** Presents filters which  enables us to filter required  data effectively.
+- **Customer Orders:** Presents Customers orders in the form of table representation, enabling admin to visualize their  data effectively and also has pagination.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React Js:** Utilizing  React.js for a robust frontend-solution solution.
+- **React Router Dom:** Implemented a navigation menu as per the mockup.
+- **Tailwind CSS:** Custom styling ensures a visually appealing and user-friendly interface.
+- **chart.js, recharts:** Utilized for graphical representation of transaction data, enhancing data visualization and analysis.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm start`.
 
-### `npm run eject`
+## Contributor
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Mayank Pujari
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding! 🌟
