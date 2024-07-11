@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Img } from '@chakra-ui/react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import avatar from "../Assests/Navbar/profile.png";
 import bellIcon from "../Assests/Navbar/notification.svg";
-import homeIcon from "../Assests/Navbar/Home.svg"; 
+import homeIcon from "../Assests/Navbar/Home.svg";
 
-const Navbar = ({title,pageName}) => {
+const Navbar = ({ title, pageName }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -22,7 +22,7 @@ const Navbar = ({title,pageName}) => {
                 <div className="text-xl font-normal">
                     {title}
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 hidden md:flex">
                     <div className="relative inline-block text-left">
                         <div>
                             <button
@@ -61,8 +61,8 @@ const Navbar = ({title,pageName}) => {
                     <Img src={avatar} alt="Avatar" className="w-8 h-8 rounded-full" />
                 </div>
             </nav>
-            <hr />
-            <nav className="bg-white py-2 px-6">
+            <hr className="hidden md:block" />
+            <nav className="bg-white py-2 px-6 hidden md:block">
                 <ol className="flex items-center space-x-2 text-sm text-gray-500">
                     <li>
                         <Link to="/" className="flex items-center space-x-1 hover:text-gray-700">

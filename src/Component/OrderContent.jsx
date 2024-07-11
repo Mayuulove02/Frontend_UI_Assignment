@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import StatsCard from './StatsCard';
 import cart from "../Assests/StatCard/cart.svg";
 import orders from "../Assests/orders.svg";
@@ -8,30 +8,30 @@ const OrderContent = () => {
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
             {/* Create Button */}
-            <div className='flex justify-between'>
-                <h3 className='text-xl'>Orders Summary</h3>
-                <button class="px-4 py-1 text-sm min-w-[120px] text-center text-white bg-[#5570F1] border  rounded-full active:text-violet-500 hover:bg-[#5570F1] focus:outline-none focus:ring">
+            <div className='flex flex-col md:flex-row md:justify-between items-center'>
+                <h3 className='text-xl mb-4 md:mb-0 md:mr-4'>Orders Summary</h3>
+                <button className="px-4 py-1 text-sm min-w-[120px] text-center text-white bg-[#5570F1] border rounded-full active:text-violet-500 hover:bg-[#5570F1] focus:outline-none focus:ring mb-4 md:mb-0">
                     + Create a New Order
                 </button>
             </div>
             {/* StatsCard */}
-            <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 <StatsCard
                     titles={["All Orders", "Pending", "Completed"]}
                     values={["450", "5", "445"]}
                     src={orders}
                     bgColor="#FEF5EA"
-                    percenatge={["", ""]}
-                    cardColor={"white"}
+                    percentage={["", ""]}
+                    cardColor="white"
                 />
                 <StatsCard
                     titles={["Canceled", "Returned", "Damaged"]}
                     values={["30", "20", "5"]}
                     src={orders}
                     bgColor="#FEF5EA"
-                    percenatge={["- 20%", ""]}
-                    cardColor={"white"}
-                    percenatgeColor={["red"]}
+                    percentage={["- 20%", ""]}
+                    cardColor="white"
+                    percentageColor={["red"]}
                 />
                 <StatsCard
                     titles={["Abandoned Cart", "Customers"]}
@@ -39,7 +39,7 @@ const OrderContent = () => {
                     src={cart}
                     bgColor="#FEF5EA"
                     color={["#CC5F5F"]}
-                    percenatge={["+ 0.00%", ""]}
+                    percentage={["+ 0.00%", ""]}
                     cardColor="white"
                 />
             </div>
@@ -49,4 +49,4 @@ const OrderContent = () => {
     )
 }
 
-export default OrderContent
+export default OrderContent;

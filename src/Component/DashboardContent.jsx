@@ -11,9 +11,10 @@ import MonthlyGraph from './MonthlyGraph';
 
 const DashboardContent = () => {
     const heights = [80, 30, 60, 15, 75, 40, 70];
+
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <StatsCard
                     titles={["Sales", "Volume"]}
                     values={["₦4,000,000.01", "450"]}
@@ -39,15 +40,15 @@ const DashboardContent = () => {
                     cardColor={"white"}
                 />
             </div>
-            <div className="mt-2">
-                <div className="flex">
-                    <div className='' style={{ width: "66.67%" }}>
-                        <div style={{ flex: 1, display: 'flex', width: "100%" }}>
-                            <div style={{ width: "48.99%" }}>
+            <div className="mt-6">
+                <div className="flex flex-col lg:flex-row">
+                    <div className="w-full lg:w-2/3 flex flex-col">
+                        <div className="flex flex-col lg:flex-row w-full">
+                            <div className="w-full lg:w-1/2">
                                 <CircleChart />
                             </div>
-                            <div className="flex flex-col ml-4" style={{ width: "49.33%" }}>
-                                <div >
+                            <div className="flex flex-col w-full lg:w-1/2 lg:ml-4 mt-4 lg:mt-0">
+                                <div>
                                     <StatsCard
                                         titles={["All Products", "Active"]}
                                         values={["45", "32"]}
@@ -60,7 +61,7 @@ const DashboardContent = () => {
                                         showDropdown={false}
                                     />
                                 </div>
-                                <div className='mt-3'>
+                                <div className="mt-4">
                                     <StatsCard
                                         titles={["Abandoned Cart", "Customers"]}
                                         values={["20%", "30"]}
@@ -73,15 +74,14 @@ const DashboardContent = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-4">
+                        <div className="mt-6">
                             <MonthlyGraph heights={heights} />
                         </div>
                     </div>
-                    <div style={{ width: "32.33%", marginLeft: "10px" }}>
+                    <div className="w-full lg:w-1/3 lg:ml-4 mt-6 lg:mt-0">
                         <RecentOrder />
                     </div>
                 </div>
-
             </div>
         </div>
     );

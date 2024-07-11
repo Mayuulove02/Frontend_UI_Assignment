@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, FormControl, FormLabel, Grid, HStack, Image, Input, Popover, PopoverBody, PopoverContent, PopoverTrigger, Select } from '@chakra-ui/react';
+import { Box, Button, Checkbox, Flex, FormControl, FormLabel, Grid, HStack, Image, Input, Popover, PopoverBody, PopoverContent, PopoverTrigger, Select } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import filter from "../Assests/Filter/filter.svg";
 import date from "../Assests/Filter/calendar.svg";
@@ -82,6 +82,7 @@ const Filter = () => {
 
     return (
         <>
+        <Flex overflowX="auto">
             <HStack>
 
                 {/* Search */}
@@ -284,6 +285,7 @@ const Filter = () => {
                     <Image src={down} alt="calendar" className='ml-2' />
                 </Button>
             </HStack>
+            </Flex>
         </>
     );
 };

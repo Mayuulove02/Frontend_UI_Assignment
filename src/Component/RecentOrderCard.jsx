@@ -9,11 +9,11 @@ const RecentOrderCard = ({ src, status, color, bgcolor }) => {
             <div className='ml-4 flex flex-col '>
                 <div className='flex flex-row '>
                     <p className='font-normal text-sm'>iPhone</p>
-                    <p className='font-normal text-xs text-gray-400 ml-48'>12 Sept 2022</p>
+                    <p className='font-normal text-xs text-gray-400 ml-20 md:ml-48'>12 Sept 2022</p>
                 </div>
                 <div className='flex flex-row  mt-2 items-center justify-center'>
                     <p className='font-medium text-sm'>₦730,000.00 x 1</p>
-                    <p className='ml-32 h-6 text-xs w-20 flex items-center justify-center rounded-lg' style={{ color: color, backgroundColor: bgcolor }}>
+                    <p className='ml-2 md:ml-32 h-6 text-xs w-20 flex items-center justify-center rounded-lg' style={{ color: color, backgroundColor: bgcolor }}>
                         {status}
                     </p>
                 </div>
