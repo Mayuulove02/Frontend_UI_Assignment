@@ -5,7 +5,7 @@ import avatar from "../Assests/Navbar/profile.png";
 import bellIcon from "../Assests/Navbar/notification.svg";
 import homeIcon from "../Assests/Navbar/Home.svg"; 
 
-const Navbar = () => {
+const Navbar = ({title,pageName}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
         <>
             <nav className="bg-white py-4 px-6 flex justify-between items-center">
                 <div className="text-xl font-normal">
-                    Dashboard
+                    {title}
                 </div>
                 <div className="flex items-center space-x-4">
                     <div className="relative inline-block text-left">
@@ -74,6 +74,7 @@ const Navbar = () => {
                             <path fillRule="evenodd" d="M10 3a1 1 0 01.707 1.707L5.414 10l5.293 5.293a1 1 0 11-1.414 1.414L3.293 10.707a1 1 0 010-1.414l6-6A1 1 0 0110 3z" clipRule="evenodd" />
                         </svg> */}
                     </li>
+                    <li>{pageName}</li>
                 </ol>
             </nav>
         </>

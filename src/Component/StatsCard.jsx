@@ -10,7 +10,8 @@ const StatsCard = ({
   color = [],
   cardColor,
   valueColor = [],
-  showDropdown = true 
+  showDropdown = true,
+  percenatgeColor=[] 
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -69,7 +70,7 @@ const StatsCard = ({
             <h3 className="text-gray-400 text-sm" style={{ color: `${color[index]}` }}>{title}</h3>
             <div className="flex items-center">
               <p className="text-xl font-medium" style={{ color: `${valueColor[index]}` }}>{values[index]}</p>
-              <p className="ml-3 text-xs font-normal text-green-500">{percenatge[index]}</p>
+              <p className="ml-3 text-xs font-normal text-green-500" style={{color:`${percenatgeColor[index]}`}}>{percenatge[index]}</p>
             </div>
           </div>
         ))}

@@ -9,10 +9,9 @@ const Dashboard = () => {
     <div className="flex">
       <Sidebar />
       <div className="flex flex-col w-full" > 
-        <Navbar />
+        <Navbar title="Dashboard"/>
         <div className="flex-grow p-1"> 
         <DashboardContent />
-        
         </div>
       </div>
     </div>

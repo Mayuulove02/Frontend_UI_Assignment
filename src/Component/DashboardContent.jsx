@@ -19,7 +19,7 @@ const DashboardContent = () => {
                     values={["₦4,000,000.01", "450"]}
                     src={volume}
                     bgColor="#E0F7FA"
-                    percenatge={["", "+20%"]}
+                    percenatge={["", "+ 20%"]}
                     cardColor={"white"}
                 />
                 <StatsCard
@@ -27,7 +27,7 @@ const DashboardContent = () => {
                     values={["1,250", "1,180"]}
                     src={user}
                     bgColor="#E8F5E9"
-                    percenatge={["+15.80%", "85%"]}
+                    percenatge={["+ 15.80%", "85%"]}
                     cardColor={"white"}
                 />
                 <StatsCard
@@ -53,7 +53,7 @@ const DashboardContent = () => {
                                         values={["45", "32"]}
                                         src={inventory}
                                         bgColor="#97A5EB"
-                                        percenatge={["", "+24%"]}
+                                        percenatge={["", "+ 24%"]}
                                         color={["white", "white"]}
                                         valueColor={["white", "white"]}
                                         cardColor="#5570F1"
@@ -67,7 +67,7 @@ const DashboardContent = () => {
                                         src={cart}
                                         bgColor="#FEF5EA"
                                         color={["#CC5F5F"]}
-                                        percenatge={["+0.00%", ""]}
+                                        percenatge={["+ 0.00%", ""]}
                                         cardColor="white"
                                     />
                                 </div>

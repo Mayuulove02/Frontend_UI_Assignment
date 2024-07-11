@@ -17,6 +17,7 @@ import headphones from "../Assests/headphones.svg";
 import gift from '../Assests/gift.svg';
 import arrow from "../Assests/arrow.svg";
 import logout from "../Assests/logout.svg";
+import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -24,14 +25,15 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+  const location = useLocation();
 
   const menuItems = [
-    { name: 'Dashboard', openIcon: dashboardOpen, closedIcon: dashboardClosed },
-    { name: 'Orders', openIcon: ordersOpen, closedIcon: ordersClosed },
-    { name: 'Customers', openIcon: customersOpen, closedIcon: customersClosed },
-    { name: 'Inventory', openIcon: inventoryOpen, closedIcon: inventoryClosed },
-    { name: 'Conversations', openIcon: conversationsOpen, closedIcon: conversationsClosed },
-    { name: 'Settings', openIcon: settingsOpen, closedIcon: settingsClosed },
+    { name: 'Dashboard', openIcon: dashboardOpen, closedIcon: dashboardClosed ,link:"/"},
+    { name: 'Orders', openIcon: ordersOpen, closedIcon: ordersClosed ,link:"/orders" },
+    { name: 'Customers', openIcon: customersOpen, closedIcon: customersClosed,link:"/coming-soon" },
+    { name: 'Inventory', openIcon: inventoryOpen, closedIcon: inventoryClosed,link:"/coming-soon" },
+    { name: 'Conversations', openIcon: conversationsOpen, closedIcon: conversationsClosed,link:"/coming-soon" },
+    { name: 'Settings', openIcon: settingsOpen, closedIcon: settingsClosed,link:"/coming-soon" },
   ];
 
   return (
@@ -52,7 +54,7 @@ const Sidebar = () => {
       </div>
       <div className={`flex flex-col mt-2 space-y-4 flex-grow`}>
         {menuItems.map((item) => (
-          <a href="#" className="p-3 hover:bg-[#5570F1] hover:text-white hover:rounded-xl" key={item.name}>
+          <Link to={item.link} className={`p-3 hover:bg-[#5570F1] hover:text-white hover:rounded-xl ${location.pathname === item.link ? 'bg-[#5570F1] text-white rounded-xl' : ''}`} key={item.name}>
             {isOpen ? (
               <div className='flex items-center'>
                 <Img src={item.openIcon} alt={item.name} className="w-6 h-4" />
@@ -63,7 +65,7 @@ const Sidebar = () => {
                 <Img src={item.closedIcon} alt={item.name} className="w-6 h-4" />
               </div>
             )}
-          </a>
+          </Link>
         ))}
       </div>
       <div
