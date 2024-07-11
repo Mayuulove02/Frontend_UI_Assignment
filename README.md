@@ -1,6 +1,9 @@
 # Frontend UI Assignment 💰
 
-Welcome to Frontend UI Assignment! 
+Welcome to Frontend UI Assignment!
+
+## Deployed Link
+https://frontend-ui-assignment.vercel.app
 
 ## Folder Structure
 
@@ -26,6 +29,7 @@ https://github.com/Mayuulove02/Frontend_U_Assignment/blob/master/src/Assests/fol
 - **React Router Dom:** Implemented a navigation menu as per the mockup.
 - **Tailwind CSS:** Custom styling ensures a visually appealing and user-friendly interface.
 - **chart.js, recharts:** Utilized for graphical representation of transaction data, enhancing data visualization and analysis.
+- **Vercel:** Vercel Enables smooth CI/CD Process.
 
 ## Installation
 
