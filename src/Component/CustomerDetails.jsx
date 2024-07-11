@@ -22,13 +22,13 @@ const CustomerDetails = () => {
         { id: 1, customer: 'Mark Otto', date: '12 Aug 2022 - 12.25 am', type: 'Home Delivery', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Completed' },
         { id: 2, customer: 'Jacob Thornton', date: '12 Aug 2022 - 12.25 am', type: 'Home Delivery', trackingId: '9348fjr73', total: '₦25,000.00', status: 'In Progress' },
         { id: 3, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
-        { id: 4, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
-        { id: 5, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
-        { id: 6, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
-        { id: 7, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
-        { id: 8, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
-        { id: 9, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
-        { id: 10, customer: 'Larry Wild', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
+        { id: 4, customer: 'Janet Adebayo', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Completed' },
+        { id: 5, customer: 'Samuel Johnson', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Completed' },
+        { id: 6, customer: 'Francis Doe', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Completed' },
+        { id: 7, customer: 'Christian Dior', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'In Progress' },
+        { id: 8, customer: 'Mayank Pujari', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Pending' },
+        { id: 9, customer: 'Mayank Sharma', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Completed' },
+        { id: 10, customer: 'Ram', date: '12 Aug 2022 - 12.25 am', type: 'Pick Up', trackingId: '9348fjr73', total: '₦25,000.00', status: 'Completed' },
     ]);
 
     const handleStatusChange = (id, newStatus) => {
