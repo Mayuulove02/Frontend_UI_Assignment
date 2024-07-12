@@ -22,7 +22,7 @@ import logout from "../Assests/logout.svg";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const [isMobileOpen, setIsMobileOpen] = useState(true); // Set to true to show hamburger icon by default
+  const [isMobileOpen, setIsMobileOpen] = useState(true); 
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -45,13 +45,6 @@ const Sidebar = () => {
 
   return (
     <Box display={{ base: 'block', md: 'flex' }}>
-      {/* <IconButton
-        display={{ base: 'block', md: 'none' }}
-        icon={isMobileOpen ? <CloseIcon /> : <HamburgerIcon />}
-        aria-label="Toggle Sidebar"
-        onClick={toggleMobileSidebar}
-        m={4}
-      /> */}
       <Box
         as="nav"
         className={`flex flex-col h-screen p-4 bg-white shadow-lg ${isOpen ? 'w-64' : 'w-20'} transition-width duration-300`}

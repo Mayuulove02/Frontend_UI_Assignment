@@ -30,8 +30,8 @@ const Filter = () => {
 
     const generateNovember2021Dates = () => {
         const dates = [];
-        const start = new Date(2021, 10, 1); // November 1, 2021
-        const end = new Date(2021, 10, 30);  // November 30, 2021
+        const start = new Date(2021, 10, 1); 
+        const end = new Date(2021, 10, 30);  
 
         for (let day = start; day <= end; day.setDate(day.getDate() + 1)) {
             dates.push(new Date(day));
@@ -282,7 +282,7 @@ const Filter = () => {
                 {/* Bulk Action */}
                 <Button style={{ border: "1px solid black", backgroundColor: "white" }}>
                     <p className=' font-normal'>Bulk Action</p>
-                    <Image src={down} alt="calendar" className='ml-2' />
+                    <Image src={down} alt="calendar" className='ml-1 md:ml-2' />
                 </Button>
             </HStack>
             </Flex>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CopyIcon from '../Assests/orders/copy.svg'; // Adjust the import based on your file structure
+import CopyIcon from '../Assests/orders/copy.svg';
 import { Image, Img } from '@chakra-ui/react';
 import sort from "../Assests/orders/sort.svg"
 import Pagination from './Pagination';
