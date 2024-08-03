@@ -56,7 +56,7 @@ const Sidebar = () => {
           {isOpen ? (
             <Flex alignItems="center">
               <Img src={logo} alt='logo' className="w-8 h-8" />
-              <Text className='font-bold text-xl ml-2'>Ankit</Text>
+              <Text className='font-bold text-xl ml-2'>Metrix</Text>
             </Flex>
           ) : (
             <Flex justifyContent="center">
